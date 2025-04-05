@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - TigerXu0330's Website</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.png">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f4f9;
+        }
+
+       .services-container {
+            background-color: white;
+            padding: 32px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            margin: 100px auto;
+            max-width: 1200px;
+        }
+
+       .service-section {
+            margin-bottom: 32px;
+        }
+
+       .service-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+       .service-item {
+            background-color: #f9fafb;
+            padding: 16px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            transition: background - color 0.3s ease;
+        }
+
+       .service-item:hover {
+            background-color: #edf2f7;
+        }
+
+       .service-item h3 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+       .service-item p {
+            color: #4b5563;
+            line-height: 1.6;
+        }
+
+       .service-item a {
+            color: #3b82f6;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+       .service-item a:hover {
+            color: #2563eb;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="bg-white shadow-md fixed top-0 left-0 right-0 z-10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-blue-600">TigerXu0330's Website</a>
+            <div class="flex space-x-4">
+                <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-blue-600">About</a>
+                <a href="services.html" class="text-gray-700 hover:text-blue-600">Services</a>
+                <a href="contact.html" class="text-gray-700 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <div class="services-container">
+        <h1 class="service-title">Our Services</h1>
+        <div class="service-section">
+            <h2 class="service-title">Games</h2>
+            <div class="service-item">
+                <h3><a href=".\Games\3D_Billiards.html" target="_blank">1.3D_Billiards</a></h3>
+                <p>Fun and exciting 3D_Billiards game.</p>
+            </div>
+            <div class="service-item">
+                <h3><a href=".\Games\Arena_(v2.41).html" target="_blank">2.Arena_(v2.41)</a></h3>
+                <p>A shoot-out between humans and computers.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 text-center text-gray-700">
+            &copy; 2025 TigerXu0330's Website. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
+    

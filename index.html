@@ -4,16 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TigerXu's Website</title>
+    <title>TigerXu0330's Website</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.png">
+    <style>
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+
+        .slide-in {
+            animation: slideIn 0.5s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
-<body class="bg-gray-100 p-8">
-    <h1 class="text-3xl font-bold text-blue-600 mb-4">Welcome to TigerXu0330's website!</h1>
-    <p class="text-gray-700 mb-6">This is my first website.</p>
-    <a href="https://daniel-dami.github.io" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">My Friend's Website</a>
-<a href="https://yorg.io" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">My Favourite Game</a>
+<body class="bg-gray-100 font-sans">
+    <nav class="bg-white shadow-md fixed top-0 left-0 right-0 z-10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-blue-600">TigerXu0330's Website</a>
+            <div class="flex space-x-4">
+                <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-blue-600">About</a>
+                <a href="services.html" class="text-gray-700 hover:text-blue-600">Services</a>
+                <a href="contact.html" class="text-gray-700 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-20 container mx-auto px-4">
+        <section class="hero bg-blue-600 text-white p-16 rounded-lg shadow-md mb-8 slide-in">
+            <h1 class="text-4xl font-bold mb-4">Welcome to TigerXu0330's Website!</h1>
+            <p class="text-lg mb-8">Feel the simplicity and beauty of the combination of HTML and CSS frameworks.</p>
+            <a href="about.html" class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-yellow-500 dark:hover:bg-yellow-600 focus:outline-none dark:focus:ring-yellow-800">Learn More</a>
+        </section>
+        <section class="features grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div class="bg-white p-8 rounded-lg shadow-md hover-scale">
+                <i class="fa-solid fa-code text-4xl text-blue-600 mb-4"></i>
+                <h2 class="text-xl font-bold mb-2">Modern Code</h2>
+                <p class="text-gray-700">Adopt the latest technologies to ensure performance and compatibility.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-md hover-scale">
+                <i class="fa-solid fa-mobile-screen-button text-4xl text-blue-600 mb-4"></i>
+                <h2 class="text-xl font-bold mb-2">Responsive Design</h2>
+                <p class="text-gray-700">Perfect display on all devices for a consistent experience.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-md hover-scale">
+                <i class="fa-solid fa-eye text-4xl text-blue-600 mb-4"></i>
+                <h2 class="text-xl font-bold mb-2">Beautiful Interface</h2>
+                <p class="text-gray-700">Well - designed with good interactivity.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 text-center text-gray-700">
+            &copy; 2025 TigerXu0330's Website. All rights reserved.
+        </div>
+    </footer>
 </body>
 
 </html>
